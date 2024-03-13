@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Youtube Share Link Disable By CSS</title>
+    <style>
+        .video-container{
+            width:100vw;
+            height:100vh;
+            overflow:hidden;
+            position:relative;
+        }
+        .video-container iframe{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        .video-container iframe{
+            position: absolute;
+            top: -60px;
+            left: 0;
+            width: 50%;
+            height: calc(50% + 100px);
+        }
+        .video-foreground{
+            pointer-events:auto;
+        }
+
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center">Youtube Share Link Disable By CSS</h1>
+    <div class="video-container" >
+        <div class="video-foreground">
+            <iframe width="716" height="403" src="https://www.youtube.com/embed/jT6v0XwUIcE?rel=0&amp;modestbranding=1" title="سورة الملك {تلاوة مرئية} القارئ حمزة بوديب | Surat Al Mulk Hamza Boudib coran | سورة تبارك" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+    </div>
+</body>
+</html>
